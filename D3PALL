@@ -1,0 +1,393 @@
+$ dmitry -winse scanme.org       
+Deepmagic Information Gathering Tool
+"There be some deep magic going on"
+
+HostIP:45.33.32.156
+HostName:scanme.org
+
+Gathered Inet-whois information for 45.33.32.156
+---------------------------------
+
+inetnum:        45.16.0.0 - 45.33.223.255
+netname:        NON-RIPE-NCC-MANAGED-ADDRESS-BLOCK
+descr:          IPv4 address block not managed by the RIPE NCC
+remarks:        ------------------------------------------------------
+remarks:
+remarks:        For registration information,
+remarks:        you can consult the following sources:
+remarks:
+remarks:        IANA
+remarks:        http://www.iana.org/assignments/ipv4-address-space
+registry
+remarks:        http://www.iana.org/assignments/ipv4-recovered-address-space
+remarks:
+remarks:        AFRINIC (Africa)
+remarks:        http://www.afrinic.net/ whois.afrinic.net
+remarks:
+remarks:        APNIC (Asia Pacific)
+remarks:        http://www.apnic.net/ whois.apnic.net
+remarks:
+remarks:        ARIN (Northern America)
+remarks:        http://www.arin.net/ whois.arin.net
+remarks:
+remarks:        LACNIC (Latin America and the Carribean)
+cnic.net
+remarks:
+remarks:        ------------------------------------------------------
+country:        EU # Country is really world wide
+admin-c:        IANA1-RIPE
+tech-c:         IANA1-RIPE
+status:         ALLOCATED UNSPECIFIED
+mnt-by:         RIPE-NCC-HM-MNT
+created:        2020-02-03T12:52:43Z
+last-modified:  2020-02-03T12:52:43Z
+source:         RIPE
+
+role:           Internet Assigned Numbers Authority
+address:        see http://www.iana.org.
+admin-c:        IANA1-RIPE
+-RIPE
+nic-hdl:        IANA1-RIPE
+remarks:        For more information on IANA services
+remarks:        go to IANA web site at http://www.iana.org.
+mnt-by:         RIPE-NCC-MNT
+created:        1970-01-01T00:00:00Z
+last-modified:  2001-09-22T09:31:27Z
+source:         RIPE # Filtered
+% This query was served by the RIPE Database Query Service version 1.115.1 (SHETLAND)
+
+
+
+Gathered Inic-whois information for scanme.org
+---------------------------------
+Domain Name: scanme.org
+Registry Domain ID: 7999bae22b5f45e8a9ce6d8aaa470425-LROR
+Registrar WHOIS Server: whois.dynadot.com
+Registrar URL: http://www.dynadot.com
+Updated Date: 2023-08-31T05:04:15Z
+Creation Date: 2005-02-24T11:23:22Z
+Registry Expiry Date: 2029-02-24T11:23:22Z
+Registrar: Dynadot Inc
+Registrar IANA ID: 472
+Registrar Abuse Contact Email: abuse@dynadot.com
+Registrar Abuse Contact Phone: +1.6502620100
+ferProhibited
+Registry Registrant ID: REDACTED FOR PRIVACY
+Registrant Name: REDACTED FOR PRIVACY
+Registrant Organization: Super Privacy Service LTD c/o Dynadot
+Registrant Street: REDACTED FOR PRIVACY
+Registrant City: REDACTED FOR PRIVACY
+Registrant State/Province: California
+Registrant Postal Code: REDACTED FOR PRIVACY
+Registrant Country: US
+Registrant Phone: REDACTED FOR PRIVACY
+Registrant Phone Ext: REDACTED FOR PRIVACY
+Registrant Fax: REDACTED FOR PRIVACY
+TED FOR PRIVACY
+Registrant Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to c��3�Uont?*e��]`;�/act the Rep76m�gis�@2�Utr`�@2�Uant, Admin, or Tee�@2�Uch contact :6m�ofTED FOR PRIVACY
+Registrant Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.
+Registry Admin ID: REDACTED FOR PRIVACY
+Admin Name: REDACTED FOR PRIVACY
+Admin Organization: REDACTED FOR PRIVACY
+Admin Street: REDACTED FOR PRIVACY
+Admin City: REDACTED FOR PRIVACY
+Admin State/Province: REDACTED FOR PRIVACY
+Admin Postal Code: REDACTED FOR PRIVACY
+Admin Co the queried+ domain ?*e��]name.
+Registry Admin ID: REDACTED FOR PRIVACY
+Admin Name: REDACTED FOR PRIVACY
+Admin Organization: REDACTED FOR PRIVACY
+Admin Street: REDACTED FOR PRIVACY
+Admin City: REDACTED FOR PRIVACY
+Admin State/Province: REDACTED FOR PRIVACY
+Admin Postal Code: REDACTED FOR PRIVACY
+*** stack smashing detected ***: terminated
+zsh: IOT instruction  dmitry -winse scanme.org
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+
+──(parthiv㉿parthiv)-[~]
+└─$ dig scanme.org ANY      
+
+; <<>> DiG 9.19.19-1-Debian <<>> scanme.org ANY
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 29357
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;scanme.org.			IN	ANY
+
+;; ANSWER SECTION:
+scanme.org.		2894	IN	A	45.33.32.156
+
+;; Query time: 0 msec
+;; SERVER: 10.10.10.10#53(10.10.10.10) (TCP)
+;; WHEN: Tue Feb 11 10:11:38 IST 2025
+;; MSG SIZE  rcvd: 44
+
+                                                                                                                                                                        
+┌──(parthiv㉿parthiv)-[~]
+└─$ dig scanme.org MX          
+
+; <<>> DiG 9.19.19-1-Debian <<>> scanme.org MX
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 57031
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;scanme.org.			IN	MX
+
+;; ANSWER SECTION:
+scanme.org.		3600	IN	MX	0 mail.titan.net.
+
+;; Query time: 380 msec
+;; SERVER: 10.10.10.10#53(10.10.10.10) (UDP)
+;; WHEN: Tue Feb 11 10:15:30 IST 2025
+;; MSG SIZE  rcvd: 58
+
+                                                                                                                                                                        
+┌──(parthiv㉿parthiv)-[~]
+└─$ dig scanme.org NS
+
+; <<>> DiG 9.19.19-1-Debian <<>> scanme.org NS
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 7063
+;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;scanme.org.			IN	NS
+
+;; ANSWER SECTION:
+scanme.org.		3600	IN	NS	ns1.linode.com.
+scanme.org.		3600	IN	NS	ns2.linode.com.
+scanme.org.		3600	IN	NS	ns5.linode.com.
+scanme.org.		3600	IN	NS	ns4.linode.com.
+scanme.org.		3600	IN	NS	ns3.linode.com.
+
+;; Query time: 1280 msec
+;; SERVER: 10.10.10.10#53(10.10.10.10) (UDP)
+;; WHEN: Tue Feb 11 10:16:57 IST 2025
+;; MSG SIZE  rcvd: 128
+
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+
+(parthiv㉿parthiv)-[~]
+└─$ dnsenum --enum google.com
+dnsenum VERSION:1.2.6
+
+-----   google.com   -----
+
+
+Host's addresses:
+__________________
+
+google.com.                              77       IN    A        142.250.70.110
+
+
+Name Servers:
+______________
+
+ns2.google.com.                          21600    IN    A        216.239.34.10
+ns3.google.com.                          21600    IN    A        216.239.36.10
+ns4.google.com.                          21600    IN    A        216.239.38.10
+ns1.google.com.                          21600    IN    A        216.239.32.10
+
+
+Mail (MX) Servers:
+___________________
+
+smtp.google.com.                         300      IN    A        142.251.12.27
+smtp.google.com.                         300      IN    A        142.251.10.27
+smtp.google.com.                         300      IN    A        142.251.12.26
+smtp.google.com.                         300      IN    A        142.251.10.26
+smtp.google.com.                         300      IN    A        74.125.24.26
+
+
+Trying Zone Transfers and getting Bind Versions:
+_________________________________________________
+
+ping www.google.com
+
+Trying Zone Transfer for google.com on ns4.google.com ... 
+AXFR record query failed: Connection timed out
+
+Trying Zone Transfer for google.com on ns2.google.com ... 
+AXFR record query failed: Connection timed out
+
+Trying Zone Transfer for google.com on ns3.google.com ... 
+AXFR record query failed: Connection timed out
+
+Trying Zone Transfer for google.com on ns1.google.com ... 
+AXFR record query failed: Network is unreachable
+
+
+Scraping google.com subdomains from Google:
+____________________________________________
+
+
+ ----   Google search page: 1   ---- 
+
+
+
+Google Results:
+________________
+
+  perhaps Google is blocking our queries.
+ Check manually.
+
+
+Brute forcing with /usr/share/dnsenum/dns.txt:
+_______________________________________________
+
+about.google.com.                        300      IN    CNAME    www3.l.google.com.
+www3.l.google.com.                       179      IN    A        142.250.183.142
+accounts.google.com.                     18       IN    A        74.125.24.84
+admin.google.com.                        6        IN    A        142.250.67.174
+ads.google.com.                          300      IN    A        142.250.67.238
+america.google.com.                      300      IN    CNAME    www3.l.google.com.
+www3.l.google.com.                       177      IN    A        142.250.183.142
+apps.google.com.                         300      IN    CNAME    www3.l.google.com.
+www3.l.google.com.                       177      IN    A        142.250.183.142
+archive.google.com.                      300      IN    A        142.250.77.46
+ap.google.com.                           300      IN    CNAME    www2.l.google.com.
+www2.l.google.com.                       300      IN    A        142.250.67.196
+asia.google.com.                         300      IN    A        142.250.67.228
+blog.google.com.                         300      IN    CNAME    www.blogger.com.
+www.blogger.com.                         300      IN    CNAME    blogger.l.google.com.
+blogger.l.google.com.                    300      IN    A        142.250.183.137
+channel.google.com.                      300      IN    A        142.250.199.174
+d.google.com.                            300      IN    CNAME    www3.l.google.com.
+www3.l.google.com.                       173      IN    A        142.250.183.142
+directory.google.com.                    300      IN    CNAME    www3.l.google.com.
+www3.l.google.com.                       173      IN    A        142.250.183.142
+dns.google.com.                          489      IN    A           8.8.4.4
+dns.google.com.                          489      IN    A           8.8.8.8
+elections.google.com.                    300      IN    A        142.250.192.110
+environment.google.com.                  300      IN    A        142.250.183.14
+europe.google.com.                       300      IN    A        142.250.192.132
+finance.google.com.                      300      IN    CNAME    www3.l.google.com.
+www3.l.google.com.                       170      IN    A        142.250.183.142
+health.google.com.                       300      IN    A        142.250.67.142
+issuetracker.google.com.                 300      IN    A        142.250.199.142
+jobs.google.com.                         300      IN    CNAME    www3.l.google.com.
+www3.l.google.com.                       166      IN    A        142.250.183.142
+mail.google.com.                         101      IN    A        142.251.42.101
+map.google.com.                          300      IN    CNAME    maps.google.com.
+maps.google.com.                         300      IN    A        142.250.182.206
+mobile.google.com.                       300      IN    CNAME    mobile.l.google.com.
+mobile.l.google.com.                     287      IN    A        142.250.192.139
+news.google.com.                         188      IN    A        142.250.70.46
+ns1.google.com.                          21566    IN    A        216.239.32.10
+ns2.google.com.                          21566    IN    A        216.239.34.10
+ns3.google.com.                          21566    IN    A        216.239.36.10
+ns.google.com.                           21600    IN    A        216.239.32.10
+print.google.com.                        300      IN    CNAME    www2.l.google.com.
+www2.l.google.com.                       280      IN    A        142.250.67.196
+privacy.google.com.                      300      IN    A        142.250.77.78
+search.google.com.                       300      IN    CNAME    www3.l.google.com.
+www3.l.google.com.                       154      IN    A        142.250.183.142
+shop.google.com.                         300      IN    A        142.251.175.92
+smtp.google.com.                         259      IN    A        142.251.12.27
+smtp.google.com.                         259      IN    A        142.251.10.27
+smtp.google.com.                         259      IN    A        142.251.12.26
+smtp.google.com.                         259      IN    A        142.251.10.26
+smtp.google.com.                         259      IN    A        74.125.24.26
+survey.google.com.                       300      IN    A        142.250.183.174
+trends.google.com.                       300      IN    CNAME    www2.l.google.com.
+www2.l.google.com.                       274      IN    A        142.250.67.196
+upload.google.com.                       300      IN    CNAME    large-uploads.l.google.com.
+large-uploads.l.google.com.              300      IN    A        142.250.183.79
+vpn.google.com.                          3600     IN    A        64.9.224.70
+vpn.google.com.                          3600     IN    A        64.9.224.69
+vpn.google.com.                          3600     IN    A        64.9.224.68
+w.google.com.                            300      IN    CNAME    www3.l.google.com.
+www3.l.google.com.                       150      IN    A        142.250.183.142
+web.google.com.                          300      IN    CNAME    www3.l.google.com.
+www3.l.google.com.                       150      IN    A        142.250.183.142
+www.google.com.                          218      IN    A        142.250.182.228
+ww.google.com.                           300      IN    CNAME    www3.l.google.com.
+www3.l.google.com.                       149      IN    A        142.250.183.142
+
+
+Launching Whois Queries:
+_________________________
+
+ whois ip result:   142.250.67.0       ->      142.250.0.0/15
+ whois ip result:   8.8.8.0            ->      8.8.8.0/24
+ whois ip result:   8.8.4.0            ->      8.8.4.0/24
+ whois ip result:   216.239.32.0       ->      216.239.32.0/19
+ whois ip result:   74.125.24.0        ->      74.125.0.0/16
+ whois ip result:   64.9.224.0         ->      64.9.224.0/19
+
+
+google.com__________
+
+ 8.8.4.0/24
+ 8.8.8.0/24
+ 74.125.0.0/16
+ 216.239.32.0/19
+ 142.250.0.0/15
+ 64.9.224.0/19
+
+
+Performing reverse lookup on 213504 ip addresses:
+
+
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+///////////////////////////////////////////////
+
+
+─(parthiv㉿parthiv)-[~]
+└─$ whatweb www.google.com
+http://www.google.com [200 OK] Cookies[AEC,NID], Country[UNITED STATES][US], HTML5, HTTPServer[gws], HttpOnly[AEC,NID], IP[142.250.182.228], Script, Title[Google], UncommonHeaders[content-security-policy-report-only], X-Frame-Options[SAMEORIGIN], X-XSS-Protection[0]
+                                                                                                                                                                        
+┌──(parthiv㉿parthiv)-[~]
+└─$ whatweb ican.org      
+http://ican.org [301 Moved Permanently] Country[UNITED STATES][US], HTTPServer[Flywheel/5.1.0], IP[151.101.2.159], RedirectLocation[https://ican.org/], Title[301 Moved Permanently], UncommonHeaders[referrer-policy,x-fw-version,x-fw-server,x-content-type-options,x-fw-hash,x-served-by,x-cache-hits,x-timer,x-fw-serve,x-fw-static,x-fw-type], X-XSS-Protection[1]
+^Z 
+zsh: suspended  whatweb ican.org
+                                                                                                                                                                        
+┌──(parthiv㉿parthiv)-[~]
+└─$ whatweb CentralOps.net
+http://CentralOps.net [301 Moved Permanently] Country[UNITED STATES][US], HTTPServer[Microsoft-IIS/8.5], IP[75.126.243.167], Microsoft-IIS[8.5], RedirectLocation[http://centralops.net/co/], Title[301: Moved Permanently]
+http://centralops.net/co/ [301 Moved Permanently] Country[UNITED STATES][US], HTTPServer[Microsoft-IIS/8.5], IP[75.126.243.167], Microsoft-IIS[8.5], RedirectLocation[https://centralops.net/co/], Title[301: Moved Permanently], UncommonHeaders[x-content-type-options,content-security-policy,referrer-policy], X-Frame-Options[DENY]
+https://centralops.net/co/ [200 OK] Country[UNITED STATES][US], Frame, HTTPServer[Microsoft-IIS/8.5], IP[75.126.243.167], Microsoft-IIS[8.5], Strict-Transport-Security[max-age=15811200], Title[Free online network tools - traceroute, nslookup, dig, whois lookup, ping - IPv6], UncommonHeaders[x-content-type-options,content-security-policy,referrer-policy], X-Frame-Options[DENY]
+                                                                                                                                                                        
+┌──(parthiv㉿parthiv)-[~]
+└─$ whatweb who.is        
+http://who.is [301 Moved Permanently] Cookies[AWSALB,AWSALBCORS,Path], Country[UNITED STATES][US], HTTPServer[nginx/1.24.0], HttpOnly[Path], IP[54.237.43.111], RedirectLocation[https://who.is/], Title[301 Moved Permanently], nginx[1.24.0]
+https://who.is/ [200 OK] Bootstrap, Cookies[AWSALB,AWSALBCORS,Path,WHOISSESSION], Country[UNITED STATES][US], HTML5, HTTPServer[nginx/1.24.0], HttpOnly[Path], IP[54.237.43.111], Meta-Author[who.is], Script, Title[WHOIS Search, Domain Name, Website, and IP Tools - Who.is], X-UA-Compatible[IE=edge], nginx[1.24.0]
+                                                                                                                                                                        
+┌──(parthiv㉿parthiv)-[~]
+└─$ 
+
+
+
+
+
