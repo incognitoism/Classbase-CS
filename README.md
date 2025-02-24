@@ -3,59 +3,40 @@ pragma solidity ^0.8.0;
 
 contract MatrixOperations {
     
+    // Hardcoded matrices
+    int8 constant A00 = 1; int8 constant A01 = 2;
+    int8 constant A10 = 3; int8 constant A11 = 4;
+
+    int8 constant B00 = 5; int8 constant B01 = 6;
+    int8 constant B10 = 7; int8 constant B11 = 8;
+
     // Function to add two matrices
-    function addMatrices(int[][] memory A, int[][] memory B) public pure returns (int[][] memory) {
-        require(A.length == B.length && A[0].length == B[0].length, "Matrices must have the same dimensions");
-
-        uint rows = A.length;
-        uint cols = A[0].length;
-        int[][] memory result = new int[][](rows);
-
-        for (uint i = 0; i < rows; i++) {
-            result[i] = new int[](cols);
-            for (uint j = 0; j < cols; j++) {
-                result[i][j] = A[i][j] + B[i][j];
-            }
-        }
-        return result;
+    function addMatrices() public pure returns (int8[2][2] memory) {
+        return [
+            [A00 + B00, A01 + B01],
+            [A10 + B10, A11 + B11]
+        ];
     }
 
     // Function to subtract two matrices
-    function subtractMatrices(int[][] memory A, int[][] memory B) public pure returns (int[][] memory) {
-        require(A.length == B.length && A[0].length == B[0].length, "Matrices must have the same dimensions");
-
-        uint rows = A.length;
-        uint cols = A[0].length;
-        int[][] memory result = new int[][](rows);
-
-        for (uint i = 0; i < rows; i++) {
-            result[i] = new int[](cols);
-            for (uint j = 0; j < cols; j++) {
-                result[i][j] = A[i][j] - B[i][j];
-            }
-        }
-        return result;
+    function subtractMatrices() public pure returns (int8[2][2] memory) {
+        return [
+            [A00 - B00, A01 - B01],
+            [A10 - B10, A11 - B11]
+        ];
     }
 
     // Function to multiply two matrices
-    function multiplyMatrices(int[][] memory A, int[][] memory B) public pure returns (int[][] memory) {
-        require(A[0].length == B.length, "Invalid matrix dimensions for multiplication");
-
-        uint rows = A.length;
-        uint cols = B[0].length;
-        uint common = A[0].length;
-        int[][] memory result = new int[][](rows);
-
-        for (uint i = 0; i < rows; i++) {
-            result[i] = new int[](cols);
-            for (uint j = 0; j < cols; j++) {
-                int sum = 0;
-                for (uint k = 0; k < common; k++) {
-                    sum += A[i][k] * B[k][j];
-                }
-                result[i][j] = sum;
-            }
-        }
-        return result;
+    function multiplyMatrices() public pure returns (int8[2][2] memory) {
+        return [
+            [
+                A00 * B00 + A01 * B10, 
+                A00 * B01 + A01 * B11
+            ],
+            [
+                A10 * B00 + A11 * B10, 
+                A10 * B01 + A11 * B11
+            ]
+        ];
     }
 }
