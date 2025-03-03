@@ -1,0 +1,62 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract Vehicle {
+    string public make;
+    string public model;
+    uint public year;
+    string public fuelType;
+
+    constructor(string memory _make, string memory _model, uint _year, string memory _fuelType) {
+        make = _make;
+        model = _model;
+        year = _year;
+        fuelType = _fuelType;
+    }
+
+    function calculateFuelEfficiency(uint distance, uint fuelUsed) public pure returns (uint) {
+        return distance / fuelUsed;
+    }
+}
+
+contract Truck is Vehicle {
+    uint public maxLoadCapacity;
+
+    constructor(string memory _make, string memory _model, uint _year, string memory _fuelType, uint _maxLoad)
+        Vehicle(_make, _model, _year, _fuelType)
+    {
+        maxLoadCapacity = _maxLoad;
+    }
+
+    function transportGoods() public pure returns (string memory) {
+        return "Transporting goods efficiently.";
+    }
+}
+
+contract Car is Vehicle {
+    uint public topSpeed;
+
+    constructor(string memory _make, string memory _model, uint _year, string memory _fuelType, uint _topSpeed)
+        Vehicle(_make, _model, _year, _fuelType)
+    {
+        topSpeed = _topSpeed;
+    }
+
+    function drive() public pure returns (string memory) {
+        return "Driving smoothly.";
+    }
+}
+
+contract Motorcycle is Vehicle {
+    bool public hasSideCar;
+
+    constructor(string memory _make, string memory _model, uint _year, string memory _fuelType, bool _hasSideCar)
+        Vehicle(_make, _model, _year, _fuelType)
+    {
+        hasSideCar = _hasSideCar;
+    }
+
+    function ride() public pure returns (string memory) {
+        return "Riding a motorcycle.";
+    }
+}
