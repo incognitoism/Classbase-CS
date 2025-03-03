@@ -1,76 +1,97 @@
+
+Here is the Solidity code for the first assignment, implementing a contract hierarchy for employees in a company:
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract MatrixOperations {
-    
-    uint8 public size;
-    int8[][] private A;
-    int8[][] private B;
-    uint private nonce;
+// Base contract for Employee
+contract Employee {
+    string public name;
+    string public addressDetails;
+    uint public salary;
+    string public jobTitle;
 
-    // Constructor to initialize matrix size and generate random matrices
-    constructor(uint8 _size) {
-        require(_size > 0, "Matrix size must be greater than 0");
-        size = _size;
-        
-        // Initialize matrices
-        for (uint8 i = 0; i < size; i++) {
-            A.push(new int8[](size));
-            B.push(new int8[](size));
-            for (uint8 j = 0; j < size; j++) {
-                A[i][j] = randomNumber(i, j);
-                B[i][j] = randomNumber(i + 1, j + 1);
-            }
-        }
+    constructor(string memory _name, string memory _address, uint _salary, string memory _jobTitle) {
+        name = _name;
+        addressDetails = _address;
+        salary = _salary;
+        jobTitle = _jobTitle;
     }
 
-    // Function to generate pseudo-random numbers (between 1 and 10)
-    function randomNumber(uint8 i, uint8 j) private returns (int8) {
-        nonce++;
-        return int8(uint8(uint256(keccak256(abi.encodePacked(block.timestamp, msg.sender, nonce, i, j)))) % 10 + 1);
-    }
-
-    // Function to get matrices
-    function getMatrices() public view returns (int8[][] memory, int8[][] memory) {
-        return (A, B);
-    }
-
-    // Function to add two matrices
-    function addMatrices() public view returns (int8[][] memory) {
-        int8[][] memory result = new int8[][](size);
-        for (uint8 i = 0; i < size; i++) {
-            result[i] = new int8[](size);
-            for (uint8 j = 0; j < size; j++) {
-                result[i][j] = A[i][j] + B[i][j];
-            }
-        }
-        return result;
-    }
-
-    // Function to subtract two matrices
-    function subtractMatrices() public view returns (int8[][] memory) {
-        int8[][] memory result = new int8[][](size);
-        for (uint8 i = 0; i < size; i++) {
-            result[i] = new int8[](size);
-            for (uint8 j = 0; j < size; j++) {
-                result[i][j] = A[i][j] - B[i][j];
-            }
-        }
-        return result;
-    }
-
-    // Function to multiply two matrices
-    function multiplyMatrices() public view returns (int8[][] memory) {
-        int8[][] memory result = new int8[][](size);
-        for (uint8 i = 0; i < size; i++) {
-            result[i] = new int8[](size);
-            for (uint8 j = 0; j < size; j++) {
-                result[i][j] = 0;
-                for (uint8 k = 0; k < size; k++) {
-                    result[i][j] += A[i][k] * B[k][j];
-                }
-            }
-        }
-        return result;
+    // Function to calculate bonuses (example: 10% of salary)
+    function calculateBonus() public view returns (uint) {
+        return (salary * 10) / 100;
     }
 }
+
+// Derived contract for Manager
+contract Manager is Employee {
+    uint public numberOfProjects;
+
+    constructor(string memory _name, string memory _address, uint _salary, uint _numProjects)
+        Employee(_name, _address, _salary, "Manager")
+    {
+        numberOfProjects = _numProjects;
+    }
+
+    // Function to manage projects
+    function manageProject() public view returns (string memory) {
+        return "Managing multiple projects.";
+    }
+}
+
+// Derived contract for Developer
+contract Developer is Employee {
+    string public programmingLanguage;
+
+    constructor(string memory _name, string memory _address, uint _salary, string memory _language)
+        Employee(_name, _address, _salary, "Developer")
+    {
+        programmingLanguage = _language;
+    }
+
+    // Function to generate performance reports
+    function generateReport() public view returns (string memory) {
+        return "Generating developer performance report.";
+    }
+}
+
+// Derived contract for Programmer
+contract Programmer is Employee {
+    string public favoriteIDE;
+
+    constructor(string memory _name, string memory _address, uint _salary, string memory _ide)
+        Employee(_name, _address, _salary, "Programmer")
+    {
+        favoriteIDE = _ide;
+    }
+
+    // Function to manage codebase
+    function manageCode() public view returns (string memory) {
+        return "Managing and optimizing the codebase.";
+    }
+}
+
+Explanation:
+
+1. Base Contract: Employee
+
+Stores employee details like name, address, salary, and job title.
+
+Implements a calculateBonus function that calculates a 10% bonus.
+
+
+
+2. Derived Contracts:
+
+Manager: Inherits from Employee and adds numberOfProjects, along with a function to manage projects.
+
+Developer: Inherits from Employee and adds programmingLanguage, along with a function to generate reports.
+
+Programmer: Inherits from Employee and adds favoriteIDE, along with a function to manage the codebase.
+
+
+
+
+This structure effectively demonstrates inheritance and constructor usage in Solidity. Let me know if you need any modifications!
+
