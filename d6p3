@@ -1,0 +1,66 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract Shape {
+    function getPerimeter() public pure virtual returns (uint) {}
+
+    function getArea() public pure virtual returns (uint) {}
+}
+
+contract Circle is Shape {
+    uint public radius;
+
+    constructor(uint _radius) {
+        radius = _radius;
+    }
+
+    function getPerimeter() public pure override returns (uint) {
+        return 2 * 314 * radius / 100; // Approximation of 2 * π * r
+    }
+
+    function getArea() public pure override returns (uint) {
+        return 314 * radius * radius / 100; // Approximation of π * r^2
+    }
+}
+
+contract Rectangle is Shape {
+    uint public length;
+    uint public width;
+
+    constructor(uint _length, uint _width) {
+        length = _length;
+        width = _width;
+    }
+
+    function getPerimeter() public pure override returns (uint) {
+        return 2 * (length + width);
+    }
+
+    function getArea() public pure override returns (uint) {
+        return length * width;
+    }
+}
+
+contract Triangle is Shape {
+    uint public base;
+    uint public height;
+    uint public side1;
+    uint public side2;
+    uint public side3;
+
+    constructor(uint _base, uint _height, uint _side1, uint _side2, uint _side3) {
+        base = _base;
+        height = _height;
+        side1 = _side1;
+        side2 = _side2;
+        side3 = _side3;
+    }
+
+    function getPerimeter() public pure override returns (uint) {
+        return side1 + side2 + side3;
+    }
+
+    function getArea() public pure override returns (uint) {
+        return (base * height) / 2;
+    }
+}
