@@ -1,0 +1,30 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+// Import the library
+import "./MathLibrary.sol";
+
+contract TestMathLibrary {
+    using MathLibrary for uint256;
+    using MathLibrary for int256;
+
+    function testSqrt(uint256 x) public pure returns (uint256) {
+        return MathLibrary.sqrt(x);
+    }
+
+    function testAbs(int256 x) public pure returns (int256) {
+        return MathLibrary.abs(x);
+    }
+
+    function testSquare(int256 x) public pure returns (int256) {
+        return MathLibrary.square(x);
+    }
+
+    function testMax(int256 a, int256 b) public pure returns (int256) {
+        return MathLibrary.max(a, b);
+    }
+
+    function testMin(int256 a, int256 b) public pure returns (int256) {
+        return MathLibrary.min(a, b);
+    }
+}
